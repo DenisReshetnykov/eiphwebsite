@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>European Institute of Public Health</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/libs.min.css">
@@ -11,27 +13,36 @@
 </head>
 <body class="index">
 
-	<header>
-		<div class="container" display="flex" flex-direction="row" justify-content="center">
+	<header id="mobile">
+		<div class="container">
 			<div class="row">
-				<div class="col-md-8 social">
-					<div class="col-md-5">
-						<div class="logotype"><img src="img/logo.png" alt=""></div>
-					</div>
-					<div class="col-md-3 header_text">
+				<div class="col-sm-1 col-xs-1"></div>
+				<div class="main_menu col-sm-5 col-xs-5">Меню</div>
+				<div class="logotype col-sm-5 col-xs-6"><img src="img/logo.png" alt=""></div>
+			</div>
+		</div>
+	</header>
+
+	<header id="desktop">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-2 col-sm-2 logotype">
+					<div class="logotype"><img src="img/logo.png" alt=""></div>
+				</div>
+				<div class="col-lg-6 col-md-7 hidden-sm hidden-xs social">
+					<div class="col-lg-6 col-md-4 header_text">
 						<p>Мы в соц. сетях</p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-lg-6 col-md-8">
 						<a href="construction.html"><img class="icons" src="img/facebook_ico.png" alt=""></a>
 						<a href="construction.html"><img class="icons" src="img/vkontakte_ico.png" alt=""></a>
 						<a href="construction.html"><img class="icons" src="img/googleplus_ico.png" alt=""></a>
 						<a href="construction.html"><img class="icons" src="img/twitter_ico.png" alt=""></a>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="phone">
-						<h3>+38 (050) <b>050-50-50</b></h3>
-					</div>
+				<div class="sm_menu col-sm-4">Меню</div>
+				<div class="phone col-lg-3 col-md-3 col-sm-5">
+					<h3>+38 (050) <b>050-50-50</b></h3>
 				</div>
 			</div>
 		</div>
@@ -40,7 +51,8 @@
 	<nav id="top_nav">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-9 nav">
+				<div class="col-sm-2"></div>
+				<div class="col-lg-9 col-md-11 col-sm-8 nav">
 					<ul class="list-inline">
 						<a href="index.html">
 							<li>Главная</li>
@@ -62,7 +74,7 @@
 						</a>
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="button_send col-lg-3">
 					<div class="header_button"><button>Связаться с нами</button></div>
 				</div>
 			</div>
@@ -72,13 +84,13 @@
 	<section id="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-lg-8 col-md-12 col-sm-12">
 					<h1>European Institute of <br> Public Health</h1>
 					<h2></h2>
 					<h2></h2>
-					<button>Подробнее</button>
+					<button class="main_button">Подробнее</button>
 				</div>
-				<div class="col-md-4">
+				<div class="col-lg-4 col-md-12 col-sm-3">
 					<div class="our_team">
 						<h4>Наши <br> преподаватели </h4>
 						<button>Подробнее</button>
@@ -94,7 +106,7 @@
 				<h3>Не всегда во власти врача исцелить больного<br> Овидий</h3>
 				<p>Грань между здоровым и больным населением проходит в зависимости от доминирующих стандартов массового поведения</p>
 			</div>
-			<div class="row">
+			<div class="row internal_links">
 				<ul class="list-inline">
 					<a href="construction.html">
 						<div class="enrollee">
@@ -134,8 +146,8 @@
 	 			<div class="col-md-8">
 	 					<div class="row news_card">
 	 						<a href="construction.html">
-		 					<div class="col-md-4"><img src="img/news_placeholder.png" alt=""></div>
-		 					<div class="col-md-8">
+		 					<div class="col-md-4 col-sm-4"><img src="img/news_placeholder.png" alt="" class="img-responsive"></div>
+		 					<div class="col-md-8 col-sm-8">
 								<p class="pubdate">01.06.2017</p>
 								<h2 class="newstitle">Основы медицинской географии и экологии человека</h2>
 								<p class="newsintro">Медицинская география существует более 50 лет. В СССР она не получила развития по причине того, что данные медицинской географии категорически противоречили идеологическим декларациям.</p>
@@ -144,18 +156,18 @@
 	 					</div>
 	 					<div class="row news_card">
 	 						<a href="construction.html">
-	 						<div class="col-md-4"><img src="img/news_placeholder.png" alt=""></div>
-	 						<div class="col-md-8"> 						
+	 						<div class="col-md-4 col-sm-4"><img src="img/news_placeholder.png" alt="" class="img-responsive"></div>
+	 						<div class="col-md-8 col-sm-8"> 						
 								<p class="pubdate">01.06.2017</p>
 								<h2 class="newstitle">Массовое поведение, его специфика и последствия, связанные с заболеваемостью населения</h2>
-								<p class="newsintro">Данный курс подготовлен нашими экспертами на основании многолетней работы в области исследования массового поведения людей в различных культурах и детального исследования западных научных работ по этой тематике. </p>
+								<p class="newsintro">Данный курс подготовлен нашими экспертами на основании многолетней работы в области исследования массового поведения людей в различных культурах и детального исследования западных научных работ по этой тематике.</p>
 							</div>
 							</a>
 	 					</div>
 	 					<div class="row news_card">
 	 						<a href="construction.html">
-	 						<div class="col-md-4"><img src="img/news_placeholder.png" alt=""></div>
-	 						<div class="col-md-8">
+	 						<div class="col-md-4 col-sm-4"><img src="img/news_placeholder.png" alt="" class="img-responsive"></div>
+	 						<div class="col-md-8 col-sm-8">
 								<p class="pubdate">01.06.2017</p>
 								<h2 class="newstitle">Перемены климата и проблемы здравоохранения</h2>
 								<p class="newsintro">Делается детальный анализ различных территорий с точки зрения перемен климата и специфики их проявления в зависимости от района. Все это исключительно важно для проведения эффективных профилактических мероприятий.</p>
@@ -164,8 +176,8 @@
 	 					</div>
 	 					<div class="row news_card">
 	 						<a href="construction.html">
-	 						<div class="col-md-4"><img src="img/news_placeholder.png" alt=""></div>
-	 						<div class="col-md-8">
+	 						<div class="col-md-4 col-sm-4"><img src="img/news_placeholder.png" alt="" class="img-responsive"></div>
+	 						<div class="col-md-8 col-sm-8">
 								<p class="pubdate">01.06.2017</p>
 								<h2 class="newstitle">Советские экологические проблемы и их трансформация в постсоветских условиях</h2>
 								<p class="newsintro">Из СССР пришло большое и тяжелое наследие, связанное с экологическими проблемами. Десятки лет пренебрежения природопользованием дали специфическую географию заражения территорий, которые остаются на десятилетия</p>
@@ -177,7 +189,7 @@
 	 				<div class="certificate">
 		 				<a href="construction.html">
 		 				<h3>Наши сертификаты</h3>
-		 				<p>Подтвержденны мировыми здравохранительными организациями</p>
+		 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, provident.</p>
 		 				<img src="img/certificate.png" alt="">
 		 				</a>
 		 			</div>
@@ -189,24 +201,24 @@
 	<section id="advantage">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-1">
+				<div class="col-lg-1 col-md-1 col-sm-12">
 					<img src="img/advantage1.png" alt="">
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-3 col-sm-12">
 					<h3 class="advantage_1">Методологический <br> подход</h3>
 					<p>Образование основаное на многолетних исследованиях</p>
 				</div>
-				<div class="col-md-1">
+				<div class="col-lg-1 col-md-1 col-sm-1">
 					<img src="img/advantage2.png" alt="">
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-3 col-sm-3">
 					<h3 class="advantage_2">Локализация<br> исследований</h3>
 					<p>Понимание специфики региона, его особенностей и проблем</p>
 				</div>
-				<div class="col-md-1">
+				<div class="col-lg-1 col-md-1 col-sm-1">
 					<img src="img/advantage3.png" alt="">
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-3 col-sm-3">
 					<h3 class="advantage_3">Комплексный<br> подход</h3>
 					<p>Разносторонний взгляд на проблему общественного здоровья</p>
 				</div>
@@ -244,34 +256,33 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-2">
 					<img class="logotype" src="img/logo.png" alt="">
 					<p>2017, EIPH</p>
 					<a href="construction.html">Карта сайта</a>
 				</div>
-				<div class="col-md-6">
-					<h4>МЕНЮ</h4>
-					<div class="col-md-6">
-						<ul>
-							<a href="construction.html">Главная</a><br>
-							<a href="construction.html">Институт</a><br>
-							<a href="construction.html">Обучение</a><br>
-							<a href="construction.html">Наука</a>
-						</ul>
-					</div>
-					<div class="col-md-6">
-						<ul>
-							<a href="construction.html">Международное сотрудничество</a><br>
-							<a href="construction.html">Абитуриентам</a><br>
-							<a href="construction.html">Студентам</a><br>
-							<a href="construction.html">Котнакты</a>
-						</ul>
-					</div>
+				<div class="col-md-3">
+					<h4>Меню</h4>
+					<ul class="footer_menu">
+						<a href="construction.html">Главная</a><br>
+						<a href="construction.html">Институт</a><br>
+						<a href="construction.html">Обучение</a><br>
+						<a href="construction.html">Наука</a>
+					</ul>
 				</div>
 				<div class="col-md-3">
+					<h4>Информация</h4>
+					<ul class="footer_info">
+						<a href="construction.html">Международное сотрудничество</a><br>
+						<a href="construction.html">Абитуриентам</a><br>
+						<a href="construction.html">Студентам</a><br>
+						<a href="construction.html">Котнакты</a>
+					</ul>
+				</div>
+				<div class="col-md-3 offset-md-1">
 					<h4>Контакты</h4>
 					<div class="phone">
-						<h3>+38 (050) 500-50-50</h3>
+						<p class="footer_phone">+38 (050) 500-50-50</p>
 					</div>
 					<div class="email">
 						<p class="email">eiph@eiph.com</p>
