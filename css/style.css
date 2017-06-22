@@ -12,26 +12,70 @@ header#mobile {
   position: fixed;
   z-index: 1000;
 }
-header#mobile .header_text {
-  font-size: 15px;
-  text-align: right;
-  color: #fff;
+header#mobile .hide-nav {
+  position: relative;
+  top: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: #33b137;
+  cursor: pointer;
 }
-header#mobile .icons {
-  margin-right: 10px;
+header#mobile .hide-nav_line {
+  display: block;
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  height: 3px;
+  background-color: white;
+  border-right: 5px;
 }
-header#mobile h3 {
-  font-size: 20px;
-  color: #fff;
-  display: inline-block;
+header#mobile .hide-nav_line--top {
+  top: 10px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
-header#mobile h3:before {
-  content: '';
-  width: 25px;
-  height: 25px;
-  background: url('../img/phone_ico.png') no-repeat;
-  display: inline-block;
-  background-position: 0 6px;
+header#mobile .hide-nav_line--mid {
+  top: 20px;
+  opacity: 1;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+header#mobile .hide-nav_line--bot {
+  top: 30px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+header#mobile .hide-nav.active .hide-nav_line--top {
+  top: 20px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+header#mobile .hide-nav.active .hide-nav_line--mid {
+  opacity: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+header#mobile .hide-nav.active .hide-nav_line--bot {
+  top: 20px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+header#mobile .logotype {
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 header#desktop {
   background-color: #138816;
@@ -66,25 +110,93 @@ header#desktop .phone {
 header#desktop .sm_menu {
   display: none;
 }
-nav {
-  padding-bottom: 140px;
+header#desktop .hide-nav {
+  position: relative;
+  top: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: #33b137;
+  cursor: pointer;
 }
-nav .nav {
+header#desktop .hide-nav_line {
+  display: block;
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  height: 3px;
+  background-color: white;
+  border-right: 5px;
+}
+header#desktop .hide-nav_line--top {
+  top: 10px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+header#desktop .hide-nav_line--mid {
+  top: 20px;
+  opacity: 1;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+header#desktop .hide-nav_line--bot {
+  top: 30px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+header#desktop .hide-nav.active .hide-nav_line--top {
+  top: 20px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+header#desktop .hide-nav.active .hide-nav_line--mid {
+  opacity: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+header#desktop .hide-nav.active .hide-nav_line--bot {
+  top: 20px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+header#desktop .nav_tablet {
+  display: none;
+}
+nav {
+  padding-bottom: 50px;
+}
+nav .nav_list {
   background-color: #fff;
   margin-left: 25px;
   margin-right: -25px;
   margin-top: -10px;
-  text-align: center;
+  text-align: justify;
 }
-nav ul.list-inline a {
+nav ul.list-inline li {
   display: inline-block;
-  font-size: 16px;
   padding-left: 40px;
   padding-top: 10px;
-  line-height: 45px;
-  text-decoration: none;
-  color: #000;
+  line-height: 44px;
   margin: 0 auto;
+}
+nav ul.list-inline li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+}
+nav ul.list-inline li a:hover {
+  text-decoration: underline;
 }
 nav button {
   background-color: #33b137;
@@ -104,6 +216,7 @@ nav button.main_menu_button {
   padding: 0 50px;
 }
 section#header {
+  padding-top: 100px;
   padding-bottom: 90px;
 }
 section#header h1 {
@@ -378,10 +491,22 @@ footer .footer_info {
   padding-left: 0px;
   text-align: left;
 }
-section#content h1 {
+section#construction {
   font-size: 30px;
   text-align: center;
   padding-bottom: 400px;
+}
+section#content {
+  padding-bottom: 100px;
+}
+section#content h1 {
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+section#content p {
+  text-indent: 20px;
+  text-align: justify;
 }
 /*********** Планшеты (альбомная ориентация) *********************/
 @media screen and (max-width: 1199px) {
@@ -389,40 +514,59 @@ section#content h1 {
     display: none;
   }
   section#header {
-    padding-bottom: 300px;
+    padding-bottom: 250px;
   }
   section#header .our_team {
     display: none;
   }
 }
 @media screen and (max-width: 991px) {
-  nav .nav {
-    display: none;
+  .nav_list {
+    display: block;
+    position: fixed;
+    padding-top: 70px;
+    width: 200px;
+    top: -500px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    z-index: 10;
   }
-  header#desktop .sm_menu {
+  .nav_list.show {
+    top: 0px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+  }
+  header#desktop {
+    position: fixed;
+    z-index: 1000;
+  }
+  header#desktop .nav_tablet {
     display: block;
   }
   section#news .certificate {
     display: none;
   }
+  section#header {
+    padding-bottom: 400px;
+  }
 }
 /*********** Планшеты (портретная ориентация) *********************/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   header#desktop {
     display: none;
   }
   header#mobile {
     display: block;
   }
-  .nav {
-    display: none;
-  }
   section#header {
-    padding-bottom: 350px;
+    padding-bottom: 400px;
     text-align: center;
   }
   section#news {
     text-align: center;
+    text-decoration: none;
   }
   section#news img {
     margin: 0 auto;
@@ -441,12 +585,19 @@ section#content h1 {
   }
 }
 /*********** Небольшие планшеты *********************/
+@media screen and (max-width: 615px) {
+  section#header {
+    padding-bottom: 350px;
+  }
+}
+/*********** Небольшие планшеты *********************/
 @media screen and (max-width: 600px) {
   section#header {
     text-align: center;
   }
   section#news {
     text-align: center;
+    text-decoration: none;
   }
   section#news img {
     margin: 0 auto;
@@ -454,6 +605,9 @@ section#content h1 {
 }
 /*********** Телефоны (альбомная ориентация) *********************/
 @media screen and (max-width: 480px) {
+  section#news {
+    text-decoration: none;
+  }
   section#news img {
     margin: 0 auto;
   }
