@@ -181,7 +181,7 @@ nav .nav_list {
   margin-left: 25px;
   margin-right: -25px;
   margin-top: -10px;
-  text-align: center;
+  text-align: justify;
 }
 nav ul.list-inline li {
   display: inline-block;
@@ -329,8 +329,10 @@ section#news .news_card:hover {
 section#news .news_card a {
   color: #000;
 }
-section#news img {
+section#news img.img_news {
   height: 130px;
+  float: left;
+  margin: 0 20px 5px 0;
 }
 section#news h3 {
   font-size: 24px;
@@ -562,6 +564,9 @@ section#content .video-responsive iframe {
     -o-transition: 1s;
     transition: 1s;
   }
+  ul.list-inline li {
+    padding-left: 10px;
+  }
   header#desktop {
     position: fixed;
     z-index: 1000;
@@ -589,11 +594,7 @@ section#content .video-responsive iframe {
     text-align: center;
   }
   section#news {
-    text-align: center;
     text-decoration: none;
-  }
-  section#news img {
-    margin: 0 auto;
   }
   section#services {
     text-align: center;
@@ -620,11 +621,7 @@ section#content .video-responsive iframe {
     text-align: center;
   }
   section#news {
-    text-align: center;
     text-decoration: none;
-  }
-  section#news img {
-    margin: 0 auto;
   }
 }
 /*********** Телефоны (альбомная ориентация) *********************/
