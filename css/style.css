@@ -181,7 +181,7 @@ nav .nav_list {
   margin-left: 25px;
   margin-right: -25px;
   margin-top: -10px;
-  text-align: justify;
+  text-align: center;
 }
 nav ul.list-inline li {
   display: inline-block;
@@ -507,6 +507,30 @@ section#content h1 {
 section#content p {
   text-indent: 20px;
   text-align: justify;
+}
+section#content .video-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+section#content .video-responsive iframe {
+  position: absolute;
+  top: 30px;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+.collapse .collapse_button {
+  text-align: center;
+}
+.collapse button {
+  background-color: #33b137;
+  color: #fff;
+  border: none;
+  height: 40px;
+  margin-top: 10px;
+  padding: 0 30px;
 }
 /*********** Планшеты (альбомная ориентация) *********************/
 @media screen and (max-width: 1199px) {
